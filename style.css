@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('fonts/OpenSans-Regular.woff2') format('woff2'),
+        url('fonts/OpenSans-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url('fonts/Merriweather-Regular.woff2') format('woff2'),
+        url('fonts/Merriweather-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+.container {
+    width: 100%;
+    max-width: 1190px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(152, 168, 248);
+}
+/*mon header*/
+.mon-titre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+h1 {
+    font-family: 'Merriweather';
+    font-size: 80px;
+    color: #FAF7F0;
+    padding-bottom: 60px;
+    
+}
+/*fin du header*/
+
+/*s'applique à tous les boutons, H2, a*/
+.btn {
+    width: 320px;
+    padding: 10px;
+    border-radius: 35px;
+    border: none;
+    color: #98A8F8;
+    background-color: #FAF7F0;
+    font-size: 25px;
+    text-align: center;
+    font-family: 'Open Sans';
+}
+
+h2, p {
+    font-family: 'Open Sans';
+    font-size: 45px;
+}
+
+a {
+    text-decoration: none;
+}
+/*s'applique à tous les boutons, H2, a(fin)*/
+
+
+/*section présentation*/
+.presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FAF7F0;
+    padding: 0 -10px;
+}
+
+.presentation p {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    color: #3C4048;
+    font-size: 18px;
+}
+
+.presentation h2 {
+    padding-top: 80px;
+    color: #98A8F8;
+}
+
+.presentation .btn {
+    color:  #FAF7F0;
+    background-color: #98A8F8;
+    margin-bottom: 70px;
+
+}
+/*fin section présentation*/
+ 
+
+/*début section projet*/
+.section-projets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-projets h2 {
+    margin: 80px 0px;
+    color: #FAF7F0;
+}
+
+.container-projets {
+    display: flex;
+    flex-direction: row;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding: 0px 160px;
+    margin-bottom: 70px;
+}
+
+.container-projets a {
+   height: 350px;
+   min-width: 300px;
+   color: #FAF7F0;
+   background-color: rgba(205, 252, 246, 0.341);
+   border-radius: 25px;
+   
+    
+}
+
+.projet2 {
+    margin: 0px 30px;
+}
+
+.container-projets p {
+    text-align: center;
+    padding-top: 15px;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+/*fin section projet*/
+
+/*début footer*/
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #3C4048;
+    height: 170px;
+    margin-top: 80px;
+    
+}
+
+footer li {
+    list-style: none;   
+}
+
+.link a {
+    color: #FAF7F0;
+    padding-right: 100px;
+}
+
+.git {
+    padding: 20px 0px;
+}
+
+.mon-mail a{
+    color: #FAF7F0;
+    padding-left: 100px;
+}
+
+/*fin footer*/
+
+/*portfolio*/
+
+
+.portfolio .mon-titre {
+    background-color: #3C4048;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .presentation p {
+        padding: 25px;
+    
+    }
+
+    h1 {
+            
+            text-align: center;
+
+    }
+
+    .container-projets {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .projet2 {
+        margin: 30px 0px;
+    }
+
+}
